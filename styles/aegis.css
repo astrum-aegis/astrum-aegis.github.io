@@ -24,6 +24,26 @@ p {
   margin-left: auto;
 }
 
+#navbar {
+  background-color: var(--ctp-mocha-crust);
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  transition: top 0.3s;
+  & a {
+    float: left;
+    display: block;
+    color: var(--ctp-mocha-lavender);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    &:hover {
+      background-color: lch(from var(--ctp-mocha-crust) calc(l + 10) c h);
+      color: lch(from var(--ctp-mocha-lavender) calc(l + 10) c h);
+    }
+  }
+}
+
 footer {
   position: fixed;
   left: 0;
