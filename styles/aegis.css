@@ -13,9 +13,9 @@ header {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  width: 10rem;
   border: var(--ctp-mocha-overlay0) solid;
   border-radius: 2rem;
+  top: 0;
 }
 
 p {
@@ -28,10 +28,13 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  color: var(--ctp-mocha-subtext0);
   text-align: center;
   padding-left: 10px;
   font-size: 15px;
+  background-color: var(--ctp-mocha-base);
+  & p {
+    color: var(--ctp-mocha-subtext0);
+  }
 }
 
 :root {
