@@ -8,20 +8,26 @@
   </head>
   <body>
     <nav>
-      <div id="navbar">
+      <script src="navscrolldisapear.js"></script>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="index.html">Home</a>
         <a href="members.html">Members</a>
         <a href="#">About us</a>
       </div>
     </nav>
 
-    <header>
-      <h1>Astrum aegis</h1>
-    </header>
+    <div class="main">
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <header>
+        <h1>Astrum aegis</h1>
+      </header>
 
-    <p>Isn't this really cool?</p>
-    <br />
-    <p>So cool</p>
+      <br />
+      <p class="beeg">
+        We are Astrum Aegis, a group of people looking to explore the universe. WIll you join us?
+      </p>
+    </div>
 
     <footer>
       <p>I love rats</p>

@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-header {
+h1 {
   text-align: center;
   width: auto;
   background-color: var(--ctp-mocha-mantle);
@@ -24,23 +24,88 @@ p {
   margin-left: auto;
 }
 
-#navbar {
-  background-color: var(--ctp-mocha-crust);
+.sidebar {
+  height: 100%;
+  width: 0;
   position: fixed;
-  top: -50px;
-  width: 100%;
-  transition: top 0.3s;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--ctp-mocha-mantle);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
   & a {
-    float: left;
-    display: block;
-    color: var(--ctp-mocha-lavender);
-    text-align: center;
-    padding: 15px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: var(--ctp-mocha-text);
+    display: block;
+    transition: 0.3s;
     &:hover {
-      background-color: lch(from var(--ctp-mocha-crust) calc(l + 10) c h);
-      color: lch(from var(--ctp-mocha-lavender) calc(l + 10) c h);
+      color: var(--ctp-mocha-subtext0);
     }
+  }
+  & .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--ctp-mocha-mantle);
+  color: var(--ctp-mocha-text);
+  padding: 10px 15px;
+  border: none;
+  &:hover {
+    background-color: lch(from var(--ctp-mocha-mantle) calc(l + 10) c h);
+  }
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  border: 1px solid var(--ctp-mocha-overlay0);
+  border-radius: 3px;
+  & img {
+    object-fit:scale-down;
+    width: 100%;
+    height: 100%;
+  }
+  & h2 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  & .content {
+    padding: 0.5rem;
+  }
+  & footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
   }
 }
 

@@ -3,16 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page</title>
+    <title>About us</title>
     <link rel="stylesheet" href="styles/aegis.css" />
   </head>
   <body>
     <nav>
-      <div id="mysidenav" class="sidenav">
-        <a href="index.html" id="home">Home</a>
-        <a href="members.html" id="members">Members</a>
-        <a href="#" id="about">About us</a>
+      <script src="navscrolldisapear.js"></script>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="members.html">Members</a>
+        <a href="#">About us</a>
       </div>
     </nav>
+    <div class="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+      <header>
+        <h1>Meet the members</h1>
+      </header>
+      <div class="cards">
+        <article class="card" style="background-color: #323639;">
+          <header>
+            <h2>Xay</h2>
+          </header>
+          <img src="images/Xayjr.png">
+          <div class="content">
+            <p>
+              Captain of the Astrum Aegis, and the core of the team.
+            </p>
+          </div>
+        </article>
+        <article class="card" style="background-color: #3d302d;">
+          <header>
+            <h2>Azriel</h2>
+          </header>
+          <img src="images/glocktits.png">
+          <div class="content">
+            <p>
+              Little fuckass ginger.
+            </p>
+          </div>
+        </article>
+        <article class="card" style="background-color: #5B514C;">
+          <header>
+            <h2>Tamari</h2>
+          </header>
+          <img src="images/teethman.png">
+          <div class="content">
+            <p>
+              Coolest guy ever.
+            </p>
+          </div>
+        </article>
+        <article class="card" style="background-color: #7d6411;">
+          <header>
+            <h2>Famine</h2>
+          </header>
+          <img src="famine" alt="famine">
+          <div class="content">
+            <p>
+              <b>REALLY</b> hungry
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
   </body>
 </html>
