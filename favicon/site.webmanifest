@@ -1,5 +1,5 @@
 {
-  "name": "Aegis",
+  "name": "Astrum Aegis",
   "short_name": "Aegis",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#bebebe",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
 }
