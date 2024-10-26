@@ -7,15 +7,21 @@ body {
 
 h1 {
   text-align: center;
-  width: auto;
+  width: 100%;
   background-color: var(--ctp-mocha-mantle);
   padding: 15px;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin: 3rem auto 5rem auto;
   border: var(--ctp-mocha-overlay0) solid;
   border-radius: 2rem;
   top: 0;
+}
+
+.header {
+  width: auto;
+  margin: 3rem auto 5rem auto;
+  padding: 15px;
+  display: block;
+  width: 40%;
 }
 
 p {
