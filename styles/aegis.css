@@ -26,7 +26,7 @@ p {
 
 .subhead {
   margin: auto;
-  padding-top: 0px
+  padding-top: 0px;
 }
 
 .sidebar {
@@ -104,13 +104,17 @@ img {
     padding: 0.5rem;
     text-align: center;
   }
+  & h3 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--ctp-mocha-subtext1);
+  }
   & .content {
     padding: 0.5rem;
   }
-  & footer {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
+  & p {
+    text-align: center;
   }
 }
 
