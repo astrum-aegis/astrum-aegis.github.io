@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Vergilia";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Vergilia Regular"), url("Vergilia-mL6aa.woff") format("woff");
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Allerta", sans-serif;
   background-color: var(--ctp-mocha-base);
   color: var(--ctp-mocha-text);
   margin: 0;
+  transition: var(--ctp-mocha-base) 0.5s;
 }
 
 h1 {
@@ -14,6 +22,7 @@ h1 {
   border: var(--ctp-mocha-overlay0) solid;
   border-radius: 2rem;
   top: 0;
+  font-family: Vergilia;
 }
 
 .header {
@@ -28,21 +37,17 @@ p {
   color: var(--ctp-mocha-text);
   padding: 10px;
   margin-left: auto;
+  font-family: "Allerta";
 }
 
-.subhead {
-  margin: auto;
-  padding-top: 0px;
-}
-
-.sidebar {
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--ctp-mocha-mantle);
+  background-color: var(--ctp-mocha-crust);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -53,9 +58,9 @@ p {
     color: var(--ctp-mocha-text);
     display: block;
     transition: 0.3s;
-    &:hover {
-      color: var(--ctp-mocha-subtext0);
-    }
+  }
+  & :hover {
+    color: var(--ctp-mocha-subtext0);
   }
   & .closebtn {
     position: absolute;
@@ -66,25 +71,39 @@ p {
   }
 }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: var(--ctp-mocha-mantle);
-  color: var(--ctp-mocha-text);
-  padding: 10px 15px;
-  border: none;
-  &:hover {
-    background-color: lch(from var(--ctp-mocha-mantle) calc(l + 10) c h);
-  }
-}
-
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
+  & span {
+    background-color: var(--ctp-mocha-mantle);
+    padding: 10px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: ease .4s;
+}
+
+.shown {
+  opacity: 1  ;
+  transition: ease .4s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 img {
-  max-width: 100%;
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards {
