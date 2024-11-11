@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="English">
+<html lang="English" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,9 +26,9 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,groups,home,rocket,settings"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_up,close,groups,home,rocket,settings"
     />
-    <script src="navscrolldisapear.js"></script>
+    <script src="js/navscrolldisapear.js"></script>
   </head>
   <body>
     <!--Sidebar-->
@@ -53,10 +53,20 @@
       </div>
     </div>
 
-    <div class="split">
-      <span class="material-symbols-rounded size-30">settings</span>
-      <a href="#settings">Settings</a>
-    </div>
+    <ul class="dropdwn">
+      <li>
+        <div class="icons"> 
+          <span class="material-symbols-rounded size-30">settings</span>
+          <a href="#">Settings</a>
+          <span class="material-symbols-rounded">arrow_drop_up</span>
+        </div>
+        <ul>
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+        </ul>
+      </li>
+    </ul>
 
     <div id="main">
       <span

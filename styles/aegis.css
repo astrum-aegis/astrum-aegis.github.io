@@ -1,3 +1,175 @@
+[data-theme="light"] {
+  --color-rosewater: #dc8a78;
+  --color-rosewater-rgb: 220 138 120;
+  --color-rosewater-hsl: 10.8 58.824% 66.667%;
+  --color-flamingo: #dd7878;
+  --color-flamingo-rgb: 221 120 120;
+  --color-flamingo-hsl: 0 59.763% 66.863%;
+  --color-pink: #ea76cb;
+  --color-pink-rgb: 234 118 203;
+  --color-pink-hsl: 316.034 73.418% 69.02%;
+  --color-mauve: #8839ef;
+  --color-mauve-rgb: 136 57 239;
+  --color-mauve-hsl: 266.044 85.047% 58.039%;
+  --color-red: #d20f39;
+  --color-red-rgb: 210 15 57;
+  --color-red-hsl: 347.077 86.667% 44.118%;
+  --color-maroon: #e64553;
+  --color-maroon-rgb: 230 69 83;
+  --color-maroon-hsl: 354.783 76.303% 58.627%;
+  --color-peach: #fe640b;
+  --color-peach-rgb: 254 100 11;
+  --color-peach-hsl: 21.975 99.184% 51.961%;
+  --color-yellow: #df8e1d;
+  --color-yellow-rgb: 223 142 29;
+  --color-yellow-hsl: 34.948 76.984% 49.412%;
+  --color-green: #40a02b;
+  --color-green-rgb: 64 160 43;
+  --color-green-hsl: 109.231 57.635% 39.804%;
+  --color-teal: #179299;
+  --color-teal-rgb: 23 146 153;
+  --color-teal-hsl: 183.231 73.864% 34.51%;
+  --color-sky: #04a5e5;
+  --color-sky-rgb: 4 165 229;
+  --color-sky-hsl: 197.067 96.567% 45.686%;
+  --color-sapphire: #209fb5;
+  --color-sapphire-rgb: 32 159 181;
+  --color-sapphire-hsl: 188.859 69.953% 41.765%;
+  --color-blue: #1e66f5;
+  --color-blue-rgb: 30 102 245;
+  --color-blue-hsl: 219.907 91.489% 53.922%;
+  --color-lavender: #7287fd;
+  --color-lavender-rgb: 114 135 253;
+  --color-lavender-hsl: 230.935 97.203% 71.961%;
+  --color-text: #4c4f69;
+  --color-text-rgb: 76 79 105;
+  --color-text-hsl: 233.793 16.022% 35.49%;
+  --color-subtext1: #5c5f77;
+  --color-subtext1-rgb: 92 95 119;
+  --color-subtext1-hsl: 233.333 12.796% 41.373%;
+  --color-subtext0: #6c6f85;
+  --color-subtext0-rgb: 108 111 133;
+  --color-subtext0-hsl: 232.8 10.373% 47.255%;
+  --color-overlay2: #7c7f93;
+  --color-overlay2-rgb: 124 127 147;
+  --color-overlay2-hsl: 232.174 9.623% 53.137%;
+  --color-overlay1: #8c8fa1;
+  --color-overlay1-rgb: 140 143 161;
+  --color-overlay1-hsl: 231.429 10.048% 59.02%;
+  --color-overlay0: #9ca0b0;
+  --color-overlay0-rgb: 156 160 176;
+  --color-overlay0-hsl: 228 11.236% 65.098%;
+  --color-surface2: #acb0be;
+  --color-surface2-rgb: 172 176 190;
+  --color-surface2-hsl: 226.667 12.162% 70.98%;
+  --color-surface1: #bcc0cc;
+  --color-surface1-rgb: 188 192 204;
+  --color-surface1-hsl: 225 13.559% 76.863%;
+  --color-surface0: #ccd0da;
+  --color-surface0-rgb: 204 208 218;
+  --color-surface0-hsl: 222.857 15.909% 82.745%;
+  --color-base: #eff1f5;
+  --color-base-rgb: 239 241 245;
+  --color-base-hsl: 220 23.077% 94.902%;
+  --color-mantle: #e6e9ef;
+  --color-mantle-rgb: 230 233 239;
+  --color-mantle-hsl: 220 21.951% 91.961%;
+  --color-crust: #dce0e8;
+  --color-crust-rgb: 220 224 232;
+  --color-crust-hsl: 220 20.69% 88.627%;
+}
+
+[data-theme="dark"] {
+  --color-rosewater: #f5e0dc;
+  --color-rosewater-rgb: 245 224 220;
+  --color-rosewater-hsl: 9.6 55.556% 91.176%;
+  --color-flamingo: #f2cdcd;
+  --color-flamingo-rgb: 242 205 205;
+  --color-flamingo-hsl: 0 58.73% 87.647%;
+  --color-pink: #f5c2e7;
+  --color-pink-rgb: 245 194 231;
+  --color-pink-hsl: 316.471 71.831% 86.078%;
+  --color-mauve: #cba6f7;
+  --color-mauve-rgb: 203 166 247;
+  --color-mauve-hsl: 267.407 83.505% 80.98%;
+  --color-red: #f38ba8;
+  --color-red-rgb: 243 139 168;
+  --color-red-hsl: 343.269 81.25% 74.902%;
+  --color-maroon: #eba0ac;
+  --color-maroon-rgb: 235 160 172;
+  --color-maroon-hsl: 350.4 65.217% 77.451%;
+  --color-peach: #fab387;
+  --color-peach-rgb: 250 179 135;
+  --color-peach-hsl: 22.957 92% 75.49%;
+  --color-yellow: #f9e2af;
+  --color-yellow-rgb: 249 226 175;
+  --color-yellow-hsl: 41.351 86.047% 83.137%;
+  --color-green: #a6e3a1;
+  --color-green-rgb: 166 227 161;
+  --color-green-hsl: 115.455 54.098% 76.078%;
+  --color-teal: #94e2d5;
+  --color-teal-rgb: 148 226 213;
+  --color-teal-hsl: 170 57.353% 73.333%;
+  --color-sky: #89dceb;
+  --color-sky-rgb: 137 220 235;
+  --color-sky-hsl: 189.184 71.014% 72.941%;
+  --color-sapphire: #74c7ec;
+  --color-sapphire-rgb: 116 199 236;
+  --color-sapphire-hsl: 198.5 75.949% 69.02%;
+  --color-blue: #89b4fa;
+  --color-blue-rgb: 137 180 250;
+  --color-blue-hsl: 217.168 91.87% 75.882%;
+  --color-lavender: #b4befe;
+  --color-lavender-rgb: 180 190 254;
+  --color-lavender-hsl: 231.892 97.368% 85.098%;
+  --color-text: #cdd6f4;
+  --color-text-rgb: 205 214 244;
+  --color-text-hsl: 226.154 63.934% 88.039%;
+  --color-subtext1: #bac2de;
+  --color-subtext1-rgb: 186 194 222;
+  --color-subtext1-hsl: 226.667 35.294% 80%;
+  --color-subtext0: #a6adc8;
+  --color-subtext0-rgb: 166 173 200;
+  --color-subtext0-hsl: 227.647 23.611% 71.765%;
+  --color-overlay2: #9399b2;
+  --color-overlay2-rgb: 147 153 178;
+  --color-overlay2-hsl: 228.387 16.757% 63.725%;
+  --color-overlay1: #7f849c;
+  --color-overlay1-rgb: 127 132 156;
+  --color-overlay1-hsl: 229.655 12.775% 55.49%;
+  --color-overlay0: #6c7086;
+  --color-overlay0-rgb: 108 112 134;
+  --color-overlay0-hsl: 230.769 10.744% 47.451%;
+  --color-surface2: #585b70;
+  --color-surface2-rgb: 88 91 112;
+  --color-surface2-hsl: 232.5 12% 39.216%;
+  --color-surface1: #45475a;
+  --color-surface1-rgb: 69 71 90;
+  --color-surface1-hsl: 234.286 13.208% 31.176%;
+  --color-surface0: #313244;
+  --color-surface0-rgb: 49 50 68;
+  --color-surface0-hsl: 236.842 16.239% 22.941%;
+  --color-base: #1e1e2e;
+  --color-base-rgb: 30 30 46;
+  --color-base-hsl: 240 21.053% 14.902%;
+  --color-mantle: #181825;
+  --color-mantle-rgb: 24 24 37;
+  --color-mantle-hsl: 240 21.311% 11.961%;
+  --color-crust: #11111b;
+  --color-crust-rgb: 17 17 27;
+  --color-crust-hsl: 240 22.727% 8.627%;
+}
+
+* {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  border: var(--color-overlay0);
+}
+
+h1,h2,h3 {
+  color: var(--color-text);
+}
+
 @font-face {
   font-family: "Vergilia";
   font-style: normal;
@@ -7,10 +179,8 @@
 
 body {
   font-family: "Allerta", sans-serif;
-  background-color: var(--ctp-mocha-base);
-  color: var(--ctp-mocha-text);
-  margin: 0;
-  transition: var(--ctp-mocha-base) 0.5s;
+  background-color: var(--color-base);
+  color: var(--color-text);
 }
 
 .material-symbols-rounded {
@@ -20,13 +190,14 @@ body {
 h1 {
   text-align: center;
   width: 50%;
-  background-color: var(--ctp-mocha-mantle);
+  background-color: var(--color-mantle);
   padding: 15px;
   margin: 3rem auto 5rem auto;
-  border: var(--ctp-mocha-overlay0) solid;
+  border: var(--color-overlay0) solid;
   border-radius: 2rem;
   top: 0;
   font-family: Vergilia;
+  transition: .5s var(--color-base);
 }
 
 .header {
@@ -38,7 +209,7 @@ h1 {
 }
 
 p {
-  color: var(--ctp-mocha-text);
+  color: var(--color-text);
   padding: 10px;
   margin-left: auto;
   font-family: "Allerta";
@@ -57,7 +228,7 @@ i {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--ctp-mocha-crust);
+  background-color: var(--color-crust);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -65,12 +236,13 @@ i {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: var(--ctp-mocha-text);
+    color: var(--color-text);
+    background-color: var(--color-crust);
     display: block;
     transition: 0.3s;
   }
   & :hover {
-    color: var(--ctp-mocha-subtext0);
+    color: var(--color-subtext0);
   }
   & .closebtn {
     position: absolute;
@@ -91,13 +263,18 @@ span.size-30 {
   align-items: center;
   justify-content: left;
   padding: 8px 8px 8px 32px;
-  color: var(--ctp-mocha-text);
+  color: var(--color-text);
   transition: color 0.3s ease;
+  background-color: var(--color-crust);
   & a {
+    background-color:  var(--color-crust);
     padding: 8px 8px 8px 1px;
   }
+  & span {
+    background-color:  var(--color-crust);
+  }
   &:hover * {
-    color: var(--ctp-mocha-subtext0);
+    color:  var(--color-subtext0);
   }
 }
 
@@ -112,45 +289,47 @@ span.size-30 {
   justify-content: center;
   align-items: center;
   & ul {
-    background: var(--ctp-mocha-crust);
+    background:  var(--color-crust);
     height: 0;
     left: 1;
     opacity: 0;
-    position: relative;
-    transition: all .5s ease;
+    position: absolute;
+    padding: 8px 32px 8px 8px;
     top: auto;
     list-style: none;
-    width: 50%;
+    z-index: 1;
   }
   & li ul {
     float: left;
-    width: 100%;
-    align-items: center;
+    align-content: center;
     height: 0;
     opacity: 0;
     transform: translateY(0);
     width: 67.5%;
-    position: absolute;
     right: auto;
-    z-index: 1;
+    transition: 0.3s ease;
   }
-  & li:hover ul{
+  & li:hover ul {
     height: 8em;
     opacity: 1;
     transform: translateY(0);
     position: absolute;
   }
-  & ul a {
+  & ul a, ul button {
+    width: auto;
     position: relative;
-    right: 2em;
     text-align: left;
-    align-self: center;
-    color: var(--ctp-mocha-text);
+    color:var(--color-text));
     display: block;
-    padding: 8px;
+    font-size: 16px;
+    padding: 8px 5rem 8px 0;
     text-decoration: none;
+    background:  var(--color-crust);
+    transition: all var(--global-transition-time) ease-in-out;
+    cursor: pointer;
+    font-family: 'Allerta';
     &:hover {
-      color: var(--ctp-mocha-subtext0);
+      color:  var(--color-subtext0);
     }
   }
 }
@@ -158,8 +337,7 @@ span.size-30 {
 .dropdwn > li > .icons {
   display: flex;
   text-align: center;
-  & > a{
-    color: var(--ctp-mocha-text);
+  & > a {
     display: block;
     padding: 8px 8px 8px 1px;
     text-align: center;
@@ -172,13 +350,23 @@ span.size-30 {
   }
   a + span {
     padding: 0 1px;
-    transition: .3s ease;
+    transition: 0.3s ease;
     position: relative;
     align-self: center;
   }
-  &:hover a + span{
+  &:hover a + span {
     rotate: z 180deg;
   }
+}
+
+button {
+  text-align: center;
+  font-size: 25px;
+  padding: 0.5rem 1rem;
+  transition: all var(--global-transition-time) ease-in-out;
+  cursor: pointer;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
 }
 
 #main {
@@ -186,7 +374,8 @@ span.size-30 {
   padding: 16px;
   align-items: center;
   & span {
-    background-color: var(--ctp-mocha-mantle);
+    background-color:  var(--color-mantle);
+    color:  var(--color-text);
     padding: 10px;
   }
 }
@@ -228,7 +417,7 @@ img {
 .card {
   display: grid;
   grid-template-rows: max-content 200px 1fr;
-  border: 1px solid var(--ctp-mocha-overlay0);
+  border: 1px solid  var(--color-overlay0);
   border-radius: 3px;
   & img {
     object-fit: scale-down;
@@ -244,7 +433,7 @@ img {
     margin: 0;
     padding: 0.5rem;
     text-align: center;
-    color: var(--ctp-mocha-subtext1);
+    color:  var(--color-subtext0);
   }
   & .content {
     padding: 0.5rem;
@@ -261,89 +450,8 @@ footer {
   text-align: center;
   padding-left: 10px;
   font-size: 15px;
-  background-color: var(--ctp-mocha-base);
+  background-color:  var(--color-base);
   & p {
-    color: var(--ctp-mocha-subtext0);
+    color:  var(--color-subtext0);
   }
-}
-
-:root {
-  --ctp-mocha-rosewater: #f5e0dc;
-  --ctp-mocha-rosewater-rgb: 245 224 220;
-  --ctp-mocha-rosewater-hsl: 9.6 55.556% 91.176%;
-  --ctp-mocha-flamingo: #f2cdcd;
-  --ctp-mocha-flamingo-rgb: 242 205 205;
-  --ctp-mocha-flamingo-hsl: 0 58.73% 87.647%;
-  --ctp-mocha-pink: #f5c2e7;
-  --ctp-mocha-pink-rgb: 245 194 231;
-  --ctp-mocha-pink-hsl: 316.471 71.831% 86.078%;
-  --ctp-mocha-mauve: #cba6f7;
-  --ctp-mocha-mauve-rgb: 203 166 247;
-  --ctp-mocha-mauve-hsl: 267.407 83.505% 80.98%;
-  --ctp-mocha-red: #f38ba8;
-  --ctp-mocha-red-rgb: 243 139 168;
-  --ctp-mocha-red-hsl: 343.269 81.25% 74.902%;
-  --ctp-mocha-maroon: #eba0ac;
-  --ctp-mocha-maroon-rgb: 235 160 172;
-  --ctp-mocha-maroon-hsl: 350.4 65.217% 77.451%;
-  --ctp-mocha-peach: #fab387;
-  --ctp-mocha-peach-rgb: 250 179 135;
-  --ctp-mocha-peach-hsl: 22.957 92% 75.49%;
-  --ctp-mocha-yellow: #f9e2af;
-  --ctp-mocha-yellow-rgb: 249 226 175;
-  --ctp-mocha-yellow-hsl: 41.351 86.047% 83.137%;
-  --ctp-mocha-green: #a6e3a1;
-  --ctp-mocha-green-rgb: 166 227 161;
-  --ctp-mocha-green-hsl: 115.455 54.098% 76.078%;
-  --ctp-mocha-teal: #94e2d5;
-  --ctp-mocha-teal-rgb: 148 226 213;
-  --ctp-mocha-teal-hsl: 170 57.353% 73.333%;
-  --ctp-mocha-sky: #89dceb;
-  --ctp-mocha-sky-rgb: 137 220 235;
-  --ctp-mocha-sky-hsl: 189.184 71.014% 72.941%;
-  --ctp-mocha-sapphire: #74c7ec;
-  --ctp-mocha-sapphire-rgb: 116 199 236;
-  --ctp-mocha-sapphire-hsl: 198.5 75.949% 69.02%;
-  --ctp-mocha-blue: #89b4fa;
-  --ctp-mocha-blue-rgb: 137 180 250;
-  --ctp-mocha-blue-hsl: 217.168 91.87% 75.882%;
-  --ctp-mocha-lavender: #b4befe;
-  --ctp-mocha-lavender-rgb: 180 190 254;
-  --ctp-mocha-lavender-hsl: 231.892 97.368% 85.098%;
-  --ctp-mocha-text: #cdd6f4;
-  --ctp-mocha-text-rgb: 205 214 244;
-  --ctp-mocha-text-hsl: 226.154 63.934% 88.039%;
-  --ctp-mocha-subtext1: #bac2de;
-  --ctp-mocha-subtext1-rgb: 186 194 222;
-  --ctp-mocha-subtext1-hsl: 226.667 35.294% 80%;
-  --ctp-mocha-subtext0: #a6adc8;
-  --ctp-mocha-subtext0-rgb: 166 173 200;
-  --ctp-mocha-subtext0-hsl: 227.647 23.611% 71.765%;
-  --ctp-mocha-overlay2: #9399b2;
-  --ctp-mocha-overlay2-rgb: 147 153 178;
-  --ctp-mocha-overlay2-hsl: 228.387 16.757% 63.725%;
-  --ctp-mocha-overlay1: #7f849c;
-  --ctp-mocha-overlay1-rgb: 127 132 156;
-  --ctp-mocha-overlay1-hsl: 229.655 12.775% 55.49%;
-  --ctp-mocha-overlay0: #6c7086;
-  --ctp-mocha-overlay0-rgb: 108 112 134;
-  --ctp-mocha-overlay0-hsl: 230.769 10.744% 47.451%;
-  --ctp-mocha-surface2: #585b70;
-  --ctp-mocha-surface2-rgb: 88 91 112;
-  --ctp-mocha-surface2-hsl: 232.5 12% 39.216%;
-  --ctp-mocha-surface1: #45475a;
-  --ctp-mocha-surface1-rgb: 69 71 90;
-  --ctp-mocha-surface1-hsl: 234.286 13.208% 31.176%;
-  --ctp-mocha-surface0: #313244;
-  --ctp-mocha-surface0-rgb: 49 50 68;
-  --ctp-mocha-surface0-hsl: 236.842 16.239% 22.941%;
-  --ctp-mocha-base: #1e1e2e;
-  --ctp-mocha-base-rgb: 30 30 46;
-  --ctp-mocha-base-hsl: 240 21.053% 14.902%;
-  --ctp-mocha-mantle: #181825;
-  --ctp-mocha-mantle-rgb: 24 24 37;
-  --ctp-mocha-mantle-hsl: 240 21.311% 11.961%;
-  --ctp-mocha-crust: #11111b;
-  --ctp-mocha-crust-rgb: 17 17 27;
-  --ctp-mocha-crust-hsl: 240 22.727% 8.627%;
 }
