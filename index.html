@@ -2,40 +2,92 @@
 <html lang="English">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home page</title>
     <link rel="stylesheet" href="styles/aegis.css" />
-    <link rel="icon" type="image/png" href="/favicon/favicon-48x48.png" sizes="48x48" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-48x48.png"
+      sizes="48x48"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
     <meta name="apple-mobile-web-app-title" content="Astrum" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
-    <script src="navscrolldisapear.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_up,close,groups,home,rocket,settings"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+    />
+    <script src="js/navscrolldisapear.js"></script>
+    <script src="js/dropdwn.js"></script>
+  </head>
   <body>
     <!--Navbar-->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="members.html">Members</a>
-      <a href="ship.html">The ship</a>
+      <a
+        href="javascript:void(0)"
+        class="closebtn material-symbols-rounded"
+        onclick="closeNav()"
+        >close</a
+      >
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">home</span
+        ><a href="index.html">Home</a>
+      </div>
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">groups</span
+        ><a href="members.html">Members</a>
+      </div>
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">rocket</span
+        ><a href="ship.html">The ship</a>
+      </div>
     </div>
 
+      <ul class="dropdwn">
+        <li>
+          <div class="icons"> 
+            <span class="material-symbols-rounded size-30">settings</span>
+            <a href="#">Settings</a>
+            <span class="material-symbols-rounded">arrow_drop_up</span>
+          </div>
+          <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+          </ul>
+        </li>
+      </ul>
+
     <div id="main">
-      <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <span
+        id="menu"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        >&#9776; Menu</span
+      >
       <header>
         <img class="header" src="images/aegisheader.png" alt="aegis_logo" />
       </header>
-      <p style="text-align: center;">
+      <p style="text-align: center">
         We are Astrum Aegis, a group of people looking to explore the universe.
         Will you join us?
       </p>
       <section>
         <h2>
-          <p style="font-family: 'Vergilia';">About us:</p>
+          <p style="font-family: 'Vergilia'">About us:</p>
         </h2>
-        <p style="margin: auto;padding: 10px;">
+        <p style="margin: auto; padding: 10px">
           We're a group of six people building a spaceship and then making
           content with it
         </p>

@@ -24,19 +24,47 @@
     />
     <meta name="apple-mobile-web-app-title" content="Astrum" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,groups,home,rocket,settings"
+    />
     <script src="navscrolldisapear.js"></script>
   </head>
   <body>
     <!--Sidebar-->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="members.html">Members</a>
-      <a href="ship.html">The ship</a>
+      <a
+        href="javascript:void(0)"
+        class="closebtn material-symbols-rounded"
+        onclick="closeNav()"
+        >close</a
+      >
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">home</span
+        ><a href="index.html">Home</a>
+      </div>
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">groups</span
+        ><a href="members.html">Members</a>
+      </div>
+      <div class="menico">
+        <span class="material-symbols-rounded size-30">rocket</span
+        ><a href="ship.html">The ship</a>
+      </div>
+    </div>
+
+    <div class="split">
+      <span class="material-symbols-rounded size-30">settings</span>
+      <a href="#settings">Settings</a>
     </div>
 
     <div id="main">
-      <span id="menu" style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; Menu</span>
+      <span
+        id="menu"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        >&#9776; Menu</span
+      >
       <header>
         <h1>Meet the members</h1>
       </header>
