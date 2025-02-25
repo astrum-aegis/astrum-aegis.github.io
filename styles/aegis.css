@@ -166,7 +166,9 @@
   border: var(--color-overlay0);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: var(--color-text);
 }
 
@@ -197,7 +199,7 @@ h1 {
   border-radius: 2rem;
   top: 0;
   font-family: Vergilia;
-  transition: .5s var(--color-base);
+  transition: 0.5s var(--color-base);
 }
 
 .header {
@@ -213,12 +215,6 @@ p {
   padding: 10px;
   margin-left: auto;
   font-family: "Allerta";
-}
-
-i {
-  text-align: center;
-  bottom: 0;
-  size: 100px;
 }
 
 .sidenav {
@@ -241,9 +237,6 @@ i {
     display: block;
     transition: 0.3s;
   }
-  & :hover {
-    color: var(--color-subtext0);
-  }
   & .closebtn {
     position: absolute;
     top: 0;
@@ -264,97 +257,115 @@ span.size-30 {
   justify-content: left;
   padding: 8px 8px 8px 32px;
   color: var(--color-text);
-  transition: color 0.3s ease;
   background-color: var(--color-crust);
-  & a {
-    background-color:  var(--color-crust);
+  transition: bacground-color .3s ease, color .3s ease, border-radius .7s ease;
+  a {
     padding: 8px 8px 8px 1px;
   }
-  & span {
-    background-color:  var(--color-crust);
-  }
-  &:hover * {
-    color:  var(--color-subtext0);
+  .inmen {
+    background-color: var(--color-crust);
+    color: var(--color-text);
+    transition: bacground-color .3s ease, color .3s ease;
   }
 }
 
-.dropdwn {
+.menico:hover {
+  background-color: var(--color-base);
+  color: var(--color-subtext0);
+  border-radius: 100px;
+}
+
+.menico:hover .inmen {
+  background-color: var(--color-base);
+  color: var(--color-subtext0);
+}
+
+.dropdwn { /* Settings menu */
   float: right;
   display: block;
   margin: 0 auto;
   position: relative;
+  text-decoration: none;
   width: auto;
   list-style: none;
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
   & li ul {
-    background:  var(--color-mantle);
+    background: var(--color-mantle);
     float: left;
-    align-content: center;
     height: 0;
     opacity: 0;
     width: 67.5%;
     right: auto;
-    transition: 0.3s ease;
+    transition: all 0.3s ease-in-out;
     left: 1;
     position: absolute;
     padding: 8px 32px 8px 8px;
     top: auto;
     list-style: none;
-    z-index: 1;
-    transform: translateY(0);
-    transition: 0.3s ease;
   }
-  & li:hover ul {
-    height: 8em;
-    opacity: 1;
-    transform: translateY(0);
-    transition: 0.3s ease;
-    position: absolute;
-  }
-  & ul a, ul button {
+  & ul li * {
     width: auto;
     position: relative;
     text-align: left;
-    color:var(--color-text);
-    display: block;
+    color: var(--color-text);
+    display: none;
     font-size: 16px;
-    padding: 8px 5rem 8px 0;
-    text-decoration: none;
-    background:  var(--color-crust);
-    transition: all var(--global-transition-time) ease-in-out;
+    padding: 8px 1rem 8px 0;
+    background: var(--color-mantle);
+    height: 0;
+    opacity: 0;
     cursor: pointer;
-    font-family: 'Allerta';
+    font-family: "Allerta";
+    transition: all 0.3s ease-in-out;
     &:hover {
-      color:  var(--color-subtext0);
+      color: var(--color-subtext0);
+      background-color: var(--color-base);
+      border-radius: 100px;
+    }
+  }
+  li:hover {
+    ul {
+      height: 8em;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    li * {
+      height: auto;
+      opacity: 1;
+      transform: translateY(0);
+      display: block;
+    }
+  }
+  > li > .icons {
+    display: flex;
+    text-align: center;
+    & > a {
+      display: block;
+      padding: 8px 8px 8px 1px;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    & > span {
+      margin-top: 8px;
+    }
+    a + span {
+      padding: 0 1px;
+      transition: 0.3s ease;
+      position: relative;
+      align-self: center;
+    }
+    &:hover a + span{
+      rotate: z 180deg;
     }
   }
 }
 
-.dropdwn > li > .icons {
-  display: flex;
-  text-align: center;
-  & > a {
-    display: block;
-    padding: 8px 8px 8px 1px;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  & > span {
-    margin-top: 8px;
-  }
-  a + span {
-    padding: 0 1px;
-    transition: 0.3s ease;
-    position: relative;
-    align-self: center;
-  }
-  &:hover a + span {
-    rotate: z 180deg;
-  }
+.dropdwn ul li *:hover ~  {
+  rotate: z 180deg;
 }
 
 button {
@@ -371,21 +382,17 @@ button {
   transition: margin-left 0.5s;
   padding: 16px;
   align-items: center;
-  & span {
-    background-color:  var(--color-mantle);
-    color:  var(--color-text);
+  span {
+    background-color: var(--color-mantle);
+    color: var(--color-text);
     padding: 10px;
+    transition: 0.4s ease;
+    border-radius: 20px;
   }
 }
 
 .hidden {
   opacity: 0;
-  transition: ease 0.4s;
-}
-
-.shown {
-  opacity: 1;
-  transition: ease 0.4s;
 }
 
 @media screen and (max-height: 450px) {
@@ -415,7 +422,7 @@ img {
 .card {
   display: grid;
   grid-template-rows: max-content 200px 1fr;
-  border: 1px solid  var(--color-overlay0);
+  border: 1px solid var(--color-overlay0);
   border-radius: 3px;
   & img {
     object-fit: scale-down;
@@ -431,7 +438,7 @@ img {
     margin: 0;
     padding: 0.5rem;
     text-align: center;
-    color:  var(--color-subtext0);
+    color: var(--color-subtext0);
   }
   & .content {
     padding: 0.5rem;
@@ -448,8 +455,8 @@ footer {
   text-align: center;
   padding-left: 10px;
   font-size: 15px;
-  background-color:  var(--color-base);
+  background-color: var(--color-base);
   & p {
-    color:  var(--color-subtext0);
+    color: var(--color-subtext0);
   }
 }

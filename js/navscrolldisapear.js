@@ -11,5 +11,5 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "var(--ctp-mocha-base)";
   var element = document.getElementById("menu");
-  element.classList.toggle("shown");
+  element.classList.toggle("hidden");
 }
