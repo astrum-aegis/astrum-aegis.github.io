@@ -200,7 +200,6 @@ h1 {
   background-color: var(--color-mantle);
   padding: 15px;
   margin: 3rem auto 5rem auto;
-  border: var(--color-overlay0) solid;
   border-radius: 2rem;
   top: 0;
   font-family: Vergilia;
