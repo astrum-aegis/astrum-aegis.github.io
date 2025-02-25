@@ -164,6 +164,11 @@
   background-color: var(--color-base);
   color: var(--color-text);
   border: var(--color-overlay0);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -217,7 +222,7 @@ p {
   font-family: "Allerta";
 }
 
-.sidenav {
+.sidenav { /* Sidebar */
   height: 100%;
   width: 0;
   position: fixed;
@@ -228,6 +233,7 @@ p {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border-radius: 0 10px 0 0;
   & a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -251,7 +257,7 @@ span.size-30 {
   font-variation-settings: "OPSZ" 30, "FILL" 1;
 }
 
-.menico {
+.menico { /* Sidebar icons */
   display: flex;
   align-items: center;
   justify-content: left;
@@ -291,8 +297,8 @@ span.size-30 {
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  & li ul {
-    background: var(--color-mantle);
+  & li ul { /* dropdown bckgrnd */
+    background: var(--color-surface0);
     float: left;
     height: 0;
     opacity: 0;
@@ -304,8 +310,9 @@ span.size-30 {
     padding: 8px 32px 8px 8px;
     top: auto;
     list-style: none;
+    border-radius: 10px;
   }
-  & ul li * {
+  & ul li * { /* dropdown text */
     width: auto;
     position: relative;
     text-align: left;
@@ -313,7 +320,7 @@ span.size-30 {
     display: none;
     font-size: 16px;
     padding: 8px 1rem 8px 0;
-    background: var(--color-mantle);
+    background: var(--color-surface0);
     height: 0;
     opacity: 0;
     cursor: pointer;
@@ -321,8 +328,7 @@ span.size-30 {
     transition: all 0.3s ease-in-out;
     &:hover {
       color: var(--color-subtext0);
-      background-color: var(--color-base);
-      border-radius: 100px;
+      background-color: var(--color-surface1);
     }
   }
   li:hover {
@@ -358,9 +364,9 @@ span.size-30 {
       position: relative;
       align-self: center;
     }
-    &:hover a + span{
-      rotate: z 180deg;
-    }
+  }
+  :hover a + span{
+    rotate: z 180deg;
   }
 }
 
@@ -378,12 +384,15 @@ button {
   transition: margin-left 0.5s;
   padding: 16px;
   align-items: center;
-  span {
+  span { /* Menu button */
     background-color: var(--color-mantle);
     color: var(--color-text);
     padding: 10px;
-    transition: 0.4s ease;
+    transition: 0s ease;
     border-radius: 20px;
+    :hover {
+
+    }
   }
 }
 
