@@ -288,38 +288,36 @@ span.size-30 {
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  & ul {
-    background:  var(--color-crust);
+  & li ul {
+    background:  var(--color-mantle);
+    float: left;
+    align-content: center;
     height: 0;
-    left: 1;
     opacity: 0;
+    width: 67.5%;
+    right: auto;
+    transition: 0.3s ease;
+    left: 1;
     position: absolute;
     padding: 8px 32px 8px 8px;
     top: auto;
     list-style: none;
     z-index: 1;
-  }
-  & li ul {
-    float: left;
-    align-content: center;
-    height: 0;
-    opacity: 0;
     transform: translateY(0);
-    width: 67.5%;
-    right: auto;
     transition: 0.3s ease;
   }
   & li:hover ul {
     height: 8em;
     opacity: 1;
     transform: translateY(0);
+    transition: 0.3s ease;
     position: absolute;
   }
   & ul a, ul button {
     width: auto;
     position: relative;
     text-align: left;
-    color:var(--color-text));
+    color:var(--color-text);
     display: block;
     font-size: 16px;
     padding: 8px 5rem 8px 0;
