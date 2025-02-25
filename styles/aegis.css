@@ -222,7 +222,8 @@ p {
   font-family: "Allerta";
 }
 
-.sidenav { /* Sidebar */
+.sidenav {
+  /* Sidebar */
   height: 100%;
   width: 0;
   position: fixed;
@@ -257,21 +258,23 @@ span.size-30 {
   font-variation-settings: "OPSZ" 30, "FILL" 1;
 }
 
-.menico { /* Sidebar icons */
+.menico {
+  /* Sidebar icons */
   display: flex;
   align-items: center;
   justify-content: left;
   padding: 8px 8px 8px 32px;
   color: var(--color-text);
   background-color: var(--color-crust);
-  transition: bacground-color .3s ease, color .3s ease, border-radius .7s ease;
+  transition: bacground-color 0.3s ease, color 0.3s ease,
+    border-radius 0.7s ease;
   a {
     padding: 8px 8px 8px 1px;
   }
   .inmen {
     background-color: var(--color-crust);
     color: var(--color-text);
-    transition: bacground-color .3s ease, color .3s ease;
+    transition: bacground-color 0.3s ease, color 0.3s ease;
   }
 }
 
@@ -286,7 +289,8 @@ span.size-30 {
   color: var(--color-subtext0);
 }
 
-.dropdwn { /* Settings menu */
+.dropdwn {
+  /* Settings menu */
   float: right;
   display: block;
   margin: 0 auto;
@@ -297,7 +301,8 @@ span.size-30 {
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  & li ul { /* dropdown bckgrnd */
+  & li ul {
+    /* dropdown bckgrnd */
     background: var(--color-surface0);
     float: left;
     height: 0;
@@ -312,7 +317,8 @@ span.size-30 {
     list-style: none;
     border-radius: 10px;
   }
-  & ul li * { /* dropdown text */
+  & ul li * {
+    /* dropdown text */
     width: auto;
     position: relative;
     text-align: left;
@@ -365,7 +371,7 @@ span.size-30 {
       align-self: center;
     }
   }
-  :hover a + span{
+  :hover a + span {
     rotate: z 180deg;
   }
 }
@@ -384,15 +390,13 @@ button {
   transition: margin-left 0.5s;
   padding: 16px;
   align-items: center;
-  span { /* Menu button */
+  span {
+    /* Menu button */
     background-color: var(--color-mantle);
     color: var(--color-text);
     padding: 10px;
     transition: 0s ease;
     border-radius: 20px;
-    :hover {
-
-    }
   }
 }
 

@@ -62,7 +62,7 @@
         </div>
         <ul>
           <li>
-            <button type="button" data-theme-toggle aria-label="Toggle theme">
+            <button type="button" data-theme-toggle aria-label="Toggle theme" onclick="changeImage()">
               Toggle theme
             </button>
           </li>
@@ -71,6 +71,7 @@
         </ul>
       </li>
     </ul>
+    <script src="js/themechange.js"></script>
 
     <div id="main">
       <span
@@ -80,7 +81,12 @@
         >&#9776; Menu</span
       >
       <header>
-        <img class="header" src="images/aegisheader.png" alt="aegis_logo" />
+        <img
+          class="header"
+          id="logo"
+          alt="aegis_logo"
+          src="images/aegisheader.png"
+        />
       </header>
       <p style="text-align: center">
         We are Astrum Aegis, a group of people looking to explore the universe.
